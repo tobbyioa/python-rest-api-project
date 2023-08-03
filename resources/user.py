@@ -15,7 +15,7 @@ blp = Blueprint("Users", __name__, description="Operation on users")
 
 @blp.route("/register")
 class UserRegister(MethodView):
-    @jwt_required(fresh=True)
+    #@jwt_required(fresh=True)
     @blp.arguments(UserSchema)
     def post(self, user_data):
         if UserModel.query.filter(UserModel.username == user_data["username"]).first():
