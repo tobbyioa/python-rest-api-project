@@ -1,7 +1,6 @@
 .venv
 .vscode
 __pychache__
-dadat.db
+data.db
 *.pyc
 .DS_Store
-instance
